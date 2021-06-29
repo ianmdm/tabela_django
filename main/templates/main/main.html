@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+</head>
+<body>
+    <h1>Tabela</h1>
+    <div>
+      <table id="tabela">
+        <thead>
+          <tr id="titulos">
+            <td>Produto</td>
+            <td>Data inserção na loja</td>
+            <td>Total de vendas</td>
+          </tr>
+          
+        </thead>
+        <tbody id="body">
+          
+        </tbody>
+      </table>
+    </div>
+    <style>
+      h1{
+        text-align: center;
+      }
+      table{
+        margin: 0 auto;
+        width: 97%;
+      }
+      table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
